@@ -142,7 +142,7 @@
         // 結果をterminalに表示する
         function getSqlResult(result) {
           terminal.textContent += result + "\n" + "\n";
-          // terminalエリアのスクロールを最下部にする
+          // terminalエリアのスクロールを最下部にする(結果は非同期のため、明示的にここでスクロールする)
           terminal.scrollTop = terminal.scrollHeight;
         }
 
